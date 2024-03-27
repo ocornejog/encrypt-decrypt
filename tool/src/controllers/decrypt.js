@@ -1,7 +1,8 @@
 const fs = require('fs');
 const crypto = require('crypto');
 const path = require('path');
-const algorithm = 'aes-256-cbc';
+//const algorithm = 'aes-256-cbc';
+const algorithm = 'aes-256-ctr';
 const iv = Buffer.alloc(16, 0);
 
 const decryptFile = (filePath, key) => {
